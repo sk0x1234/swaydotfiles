@@ -252,13 +252,14 @@ bar {
 	position top
 	font  Monaco,Bold 11px
 	separator_symbol "   ●"
-	#mode dock
+	mode dock
     colors {
         statusline #f9f9f9
         background #3f3f3f
 		separator #ffff00
 
-        focused_workspace	#3f3f3f	#3f3f3f	#00bfff      
+        focused_workspace	#3f3f3f	#3f3f3f	#66FF66 
+#FFFF4C     
         inactive_workspace	#3f3f3f	#3f3f3f	 #8C8C8C 
 	active_workspace	#777F8B	#777F8B	#ecedee
         urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
