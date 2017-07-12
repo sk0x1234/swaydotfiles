@@ -64,6 +64,7 @@ gaps inner $default_gaps_inner
 gaps outer $default_gaps_outer                                                                            
 smart_gaps on                                                                                             
 
+bindsym $mod+Shift+s sticky toggle
 
 ### Key bindings
 #
