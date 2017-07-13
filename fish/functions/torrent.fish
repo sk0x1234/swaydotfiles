@@ -1,3 +1,3 @@
 function torrent
- 	cd /mnt/driveE/Random_Downs/Torrents
+ 	cd /mnt/driveE/Random_downs/Torrent
  end
