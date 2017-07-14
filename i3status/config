@@ -22,7 +22,7 @@ order += "tztime local"
 wireless _first_ {
 	#	format_up = " [%essid ]"       
 	#	format_down = " [down]"
-	 format_up = "[  ]: On: %essid "   //(%quality at %essid) %ip"
+	 format_up = "<span color='#00FFFF'>[  ]:> On: %essid </span> "   //(%quality at %essid) %ip"
 	 format_down = "" #"[  ]  Wifi: down"
 }
 
@@ -33,11 +33,11 @@ ethernet enp4s0 {
   format_down = ""
 }
 battery 0 {
-		format = "<span color='#ff6600'> %status-> %percentage </span>"   // %remaining %emptytime"
+		format = "<span color='#ff6600'> %status:> %percentage </span>"   // %remaining %emptytime"
 		format_down = "No battery"
 		
 		status_chr = "<span color='#00e64d'>[  ]  </span> "
-		status_bat = "<span color='#8080ff' >'[   ] </span>"
+		status_bat = "<span color='#8080ff' >[   ] </span>"
 		status_unk = "[? ukwn ] "
 		status_full = "<span color='#4dff4d'> [  ] </span>"
 		path = "/sys/class/power_supply/BAT%d/uevent"		
@@ -55,7 +55,7 @@ tztime local {
 
 
 volume master {
-        format = "<span color='#cfafc8'>[  ]: %volume </span>"
+        format = "<span color='#FFBA3C'>[  ]:> %volume </span>"
         format_muted = "<span color='#cfafc8'>[  ]: muted (%volume) </span>"
         device = "default"
         mixer = "Master"
