@@ -1,3 +1,5 @@
 asd a
 rsync -qaHAXS SOURCE_DIR DESTINATION_DIR
-rsync -qaHAXS SOURCE_DIR DESTINATION_DIR
+
+
+sudo pacman -Rns gvfs gvfs-mtp
