@@ -1,0 +1,5 @@
+delete 
+rename Game.of.Thrones.S07E01.WEBRip.x264-RARBG.mp4
+shell mv 2_Eng.srt Game.of.Thrones.S07E01.WEBRip.x264-RARBG.srt
+
+shell nvim rc.conf
