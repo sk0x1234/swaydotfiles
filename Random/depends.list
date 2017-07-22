@@ -1,0 +1,27 @@
+metasploit-framework
+  Depends: ruby
+  Depends: ruby
+  Depends: postgresql
+  Depends: bundler
+  Depends: john
+  Depends: nasm
+  Depends: nmap
+  Depends: curl
+  Depends: git
+  Depends: wget
+  Depends: openssl
+  Depends: libc6
+  Depends: libgmp10
+  Depends: libpcap0.8
+  Depends: libpq5
+  Depends: libruby2.3
+  Depends: libsqlite3-0
+  Depends: zlib1g
+  Depends: ruby-json
+  Conflicts: <metasploit-common>
+  Breaks: <metasploit>
+  Suggests: <java7-runtime-headless>
+    default-jre-headless
+    openjdk-8-jre-headless
+  Suggests: clamav
+  Suggests: clamav-daemon
