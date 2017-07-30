@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 ### Variables
-exec xrdb $HOME/.Xresources
+exec xrdb ~/.Xresources
 
 #
 # Logo key. Use Mod1 for Alt.
@@ -25,7 +25,7 @@ set $menu dmenu_run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-output * bg /home/windy/Pictures/wallpapers/moonRising.png fill
+output * bg /home/windy/Pictures/wallpapers/pexels-photo-479273.jpeg fill
 #
 # Example configuration:
 #
@@ -143,8 +143,7 @@ assign [class="(?i)mpv"] → $ws3
 assign [class="(?i)mupdf"] → $ws4
 assign [class="(?i)wireshark-gtk"] → $ws8
 assign [class="(?i)Tor Browser"] → $ws9
-#assign [class="(?!urxvt)"] → $ws1
-assign [class="^Tor Browser$" instance="^Navigator$"] → 3
+assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
 
 #
     # switch to workspace
@@ -177,7 +176,7 @@ assign [class="^Tor Browser$" instance="^Navigator$"] → 3
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    bindsym $mod+h splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
@@ -250,35 +249,32 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
 
 bar {
 	status_command  i3status 
-	position top
+     position top
 	font  Monaco,Bold 11px
 	separator_symbol "   ●"
 	mode dock
     colors {
-        statusline #f9f9f9
+        statusline #62AEEE
+		#f9f9f9
         background #3f3f3f
 		separator #ffff00
 
         focused_workspace	#3f3f3f	#3f3f3f	#66FF66 
-#FFFF4C     
         inactive_workspace	#3f3f3f	#3f3f3f	 #8C8C8C 
-	active_workspace	#777F8B	#777F8B	#ecedee
-        urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
+		active_workspace	#777F8B	#777F8B	#ecedee
+    	  urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
     }
-#
-#			        #BORDER	 #BG	#TEXT			
 
-}
 
 
 ###########:::::::::::::::: MARCO DE VENTANA ::::::::::::::::::#
 #################################################################
 # class           		 border  backgr  text   indicator child_border 
-client.focused		 	#607d8b #607d8b #DFDFDF  #dddddd   #607d8b
-client.focused_inactive 	#263238 #263238 #9a9b9c  #111111   #263238
-client.unfocused 		#455a64 #455a64 #a1a1a1  #bfbfbf   #455a64	
-client.urgent   		#4a4b4c #4a4b4c #fdfdfd  #fbfbfb   #4a4c4b
-client.placeholder     		#000000 #0c0c0c #ffffff  #000000   #0c0c0c
-client.background       	#111111
+#client.focused		 	#607d8b #607d8b #DFDFDF  #dddddd   #607d8b
+#client.focused_inactive 	#263238 #263238 #9a9b9c  #111111   #263238
+#client.unfocused 		#455a64 #455a64 #a1a1a1  #bfbfbf   #455a64	
+#client.urgent   		#4a4b4c #4a4b4c #fdfdfd  #fbfbfb   #4a4c4b
+#client.placeholder     		#000000 #0c0c0c #ffffff  #000000   #0c0c0c
+#client.background       	#111111
 
 
