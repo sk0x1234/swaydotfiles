@@ -1,0 +1,36 @@
+sudo pacman -Sw kismet
+sudo pacman -Sw snort
+sudo pacman -Sw aircrack-ng
+sudo pacman -Sw wireshark-gtk
+sudo pacman -Sw Wireshark
+sudo pacman -Sw zaproxy
+pacman -Sw zaproxy
+pacman -Sh
+sudo pacman -S hydra
+sudo pacman -S whois
+sudo pacman -S bind-tools 
+sudo pacman -S bindtools
+sudo pacman -S traceroute
+sudo pacman -Syu
+sudo pacman -S wireshark
+sudo pacman -S wireshark-gtk
+sudo pacman -S openssh
+sudo pacman -S ssh
+sudo pacman -Rns avahi libcups 
+sudo pacman -Rns avahi 
+pacman -Qo bssh 
+pacman -Qw bssh 
+pacman -Qi bssh 
+pacman -Q bssh 
+sudo pacman -Syyu
+cd .cache/pacaur/metasploit-git/
+pacdel 
+sudo pacman -Ss wine
+sudo pacman -Ss wine32
+sudo pacman -S wine32
+sudo pacman -S wine
+sudo pacman -S mlocate
+sudo pacman -S xorg-xprop
+sudo pacman -S aria2
+sudo pacman -S xorg-xhost
+pacaur -S neofetch
