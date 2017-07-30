@@ -1,6 +1,6 @@
 function mm
-    echo $argv[1]
-	echo $argv[2]
+     	set f $argv
+		echo $f
 	/home/windy/.config/fish/functions/mpv.sh $argv &
 
 end
