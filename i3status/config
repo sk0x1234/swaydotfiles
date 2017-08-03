@@ -1,4 +1,5 @@
 # i3status configuration file.
+# b
 # see "man i3status" for documentation.
 
 # It is important that this file is edited as UTF-8.
@@ -43,9 +44,9 @@ ethernet enp4s0 {
   format_down = ""
 }
 battery 0 {
-		format = "<span color='#fa4c7e'> %status: %percentage </span>"   // %remaining %emptytime"
+		format = "<span color='#FEFF72'> %status: %percentage </span>"   // %remaining %emptytime"
 		format_down = "No battery"
-		
+#'#fa4c7e'		
 		status_chr = "<span color='#00e64d'>[  ]  </span> "
 		status_bat = "<span color='#8080ff' >[   ] </span>"
 		status_unk = "[? ukwn ] "
@@ -59,7 +60,7 @@ battery 0 {
 
 
 tztime local {
-	    format = "<span color='#C4FFB1'>%time</span>"
+	    format = "<span color='#ffc125'>%time</span>"
         format_time = "  %I:%M %p |  %a [%d]-%b [%m]"
 }
 
