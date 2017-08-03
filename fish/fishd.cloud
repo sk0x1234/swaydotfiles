@@ -3,14 +3,14 @@
 SET __fish_classic_git_prompt_initialized:\x1d
 SET __fish_init_2_39_8:\x1d
 SET __fish_init_2_3_0:\x1d
-SET fish_color_autosuggestion:6c6c6c
+SET fish_color_autosuggestion:d7d7d7
 SET fish_color_cancel:\x2dr
 SET fish_color_command:ffff00
-SET fish_color_comment:a8a8a8
+SET fish_color_comment:00ffaf
 SET fish_color_cwd:green
 SET fish_color_cwd_root:red
 SET fish_color_end:00d75f
-SET fish_color_error:d7005f
+SET fish_color_error:ff5faf
 SET fish_color_escape:bryellow\x1e\x2d\x2dbold
 SET fish_color_history_current:\x2d\x2dbold
 SET fish_color_host:normal
