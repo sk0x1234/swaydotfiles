@@ -72,7 +72,7 @@
     bindsym $mod+q kill
 
     # start your launcher
-	bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00' 
+	bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#585858' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00' 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -129,25 +129,10 @@ for_window [class="(?i)mpv"] floating enable
 workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
 
-
-#pink   		  #ff80bf		#fa4c7e
-#yellow  		  #ffff66		#fdd243
-#green   		  #aaff80		#78da59
-#Dark blue 		  #1a8cff		#166cd6
-#light blue 	  #99ccff		#33bdf5
-#Grey Shadow      #b3b3b3		#8d8e90
-#Orange 		  #ffa64d 		#fba137
-#red +white		  #ff6f69		#f7786b
-
-
-
-
 ######grouping workspaces+name####
 set $ws1 "<span color='#78da59'>1:</span>"
 set $ws2 "<span color='#ffff33'>2:</span>"
-#IKEA Yellow
 set $ws3 "<span color='#cc00ff'>3:</span>"    
-#yahoo
 set $ws4  "<span color='#00A1F1'>4:</span>"
 set $ws5  "<span color='#F65314'>5:</span>"
 set $ws6  "<span color='#f7786b'>6:</span>"
@@ -164,7 +149,6 @@ assign [class="(?i)wireshark-gtk"] → $ws8
 assign [class="(?i)Tor Browser"] → $ws9
 assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
 
-#
     # switch to workspace
     bindsym $mod+1 workspace $ws1
     bindsym $mod+2 workspace $ws2
@@ -268,15 +252,17 @@ bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
 
 bar {
 	status_command  i3status 
-     position top
+    position top
 	font  Monaco,Bold 11px
-	separator_symbol "   ●"
+	separator_symbol "   "
 	mode dock
+   
     colors {
         statusline #62AEEE
-        #background #3f3f3f
+        #background #585858
         background #585858
-		separator #ffff00
+		#separator #ffff00
+		separator #fff32e
 							#border 	#bg		#txt
         focused_workspace	#585858	#585858	#66FF66 
         inactive_workspace	#585858	#585858	 #8C8C8C 
@@ -285,8 +271,8 @@ bar {
 
 
 
-		# focused_workspace	#3f3f3f	#3f3f3f	#66FF66 
-        #inactive_workspace	#3f3f3f	#3f3f3f	 #8C8C8C 
+		# focused_workspace	#585858	#585858	#66FF66 
+        #inactive_workspace	#585858	#585858	 #8C8C8C 
 		#active_workspace	#777F8B	#777F8B	#ecedee
     	#  urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
     }
