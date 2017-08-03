@@ -275,11 +275,11 @@ bar {
     colors {
         statusline #62AEEE
         #background #3f3f3f
-        background #787878
+        background #585858
 		separator #ffff00
 							#border 	#bg		#txt
-        focused_workspace	#787878	#787878	#66FF66 
-        inactive_workspace	#787878	#787878	 #8C8C8C 
+        focused_workspace	#585858	#585858	#66FF66 
+        inactive_workspace	#585858	#585858	 #8C8C8C 
 		active_workspace	#777F8B	#777F8B	#ecedee
     	 urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
 
