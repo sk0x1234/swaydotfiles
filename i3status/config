@@ -65,7 +65,7 @@ tztime local {
 
 
 volume master {
-        format = "<span color='#D1A3FF'>[  ]: %volume </span>"
+        format = "<span color='#CEA8FF'>[  ]: %volume </span>"
         format_muted = "<span color='#cfafc8'>[  ]: muted (%volume) </span>"
         device = "default"
         mixer = "Master"
