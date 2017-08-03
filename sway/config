@@ -4,31 +4,26 @@
 #
 # Read `man 5 sway` for a complete reference.
 ### Variables
-exec xrdb ~/.Xresources
+	exec --no-startup-id xrdb ~/.Xresources
 
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-
+	set $mod Mod4
 #font config
 #
-font pango:Monaco,9
+	font pango:Monaco,9
 # Your preferred terminal emulator
-set $term urxvt
+	set $term urxvt
 # Your preferred application launcher
-set $menu dmenu_run
+	set $menu dmenu_run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-output * bg /home/windy/Pictures/wallpapers/pexels-photo-479273.jpeg fill
-#
+	output * bg /home/windy/Pictures/wallpapers/wallhaven-295990.png fill
+
+
+
 # Example configuration:
-#
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -41,30 +36,30 @@ output * bg /home/windy/Pictures/wallpapers/pexels-photo-479273.jpeg fill
 
 #       natural_scroll enabled
 #       middle_emulation enabled
-input "2:8:AlpsPS/2_ALPS_GlidePoint" {  
-	   accel_profile adaptive
-       dwt enabled
-       tap enabled
-       scroll_method  edge
-   }
+	input "2:8:AlpsPS/2_ALPS_GlidePoint" {  
+		   accel_profile adaptive
+		   dwt enabled
+		   tap enabled
+		   scroll_method  edge
+	   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
  #:::::::::disable_window_borders::::::::                                                                  
- for_window [class="^.*"] border pixel 0                                                                   
- new_window pixel 1                                                                                        
- new_float  normal   
+	 for_window [class="^.*"] border pixel 0                                                                   
+	 new_window pixel 1                                                                                        
+	 new_float  normal   
 
 
 #:::::i3_ gaps::::::::::::::                                                                              
-set $default_gaps_inner 10                                                                                
-set $default_gaps_outer 5                                                                                 
-gaps inner $default_gaps_inner                                                                            
-gaps outer $default_gaps_outer                                                                            
-smart_gaps on                                                                                             
+	set $default_gaps_inner 10                                                                                
+	set $default_gaps_outer 5                                                                                 
+	gaps inner $default_gaps_inner                                                                            
+	gaps outer $default_gaps_outer                                                                            
+	smart_gaps on                                                                                             
 
-bindsym $mod+Shift+s sticky toggle
+	bindsym $mod+Shift+s sticky toggle
 
 ### Key bindings
 #
@@ -77,7 +72,7 @@ bindsym $mod+Shift+s sticky toggle
     bindsym $mod+q kill
 
     # start your launcher
-bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00' 
+	bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00' 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -85,12 +80,22 @@ bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' 
     # mouse button for dragging.
     floating_modifier $mod normal
 
+
+# Home row direction keys, like vim
+	set $left h
+	set $down j
+	set $up k
+	set $right l
+
+
     # reload the configuration file
     bindsym $mod+Shift+r reload
 
     # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
-#
+
+	#sway lock
+    bindsym $mod+a exec  swaylock -i /home/windy/Pictures/wallpapers/wallhaven-295990.png
 # Moving around:
 #
     # Move your focus around
@@ -125,20 +130,34 @@ workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
 
 
+#pink   		  #ff80bf		#fa4c7e
+#yellow  		  #ffff66		#fdd243
+#green   		  #aaff80		#78da59
+#Dark blue 		  #1a8cff		#166cd6
+#light blue 	  #99ccff		#33bdf5
+#Grey Shadow      #b3b3b3		#8d8e90
+#Orange 		  #ffa64d 		#fba137
+#red +white		  #ff6f69		#f7786b
+
+
+
+
 ######grouping workspaces+name####
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4  "4:"
-set $ws5  "5:"
-set $ws6  "6:"
-set $ws7  "7:"
-set $ws8  "8:"
-set $ws9   "9:"
-set $ws10  "10:"
+set $ws1 "<span color='#78da59'>1:</span>"
+set $ws2 "<span color='#ffff33'>2:</span>"
+#IKEA Yellow
+set $ws3 "<span color='#cc00ff'>3:</span>"    
+#yahoo
+set $ws4  "<span color='#00A1F1'>4:</span>"
+set $ws5  "<span color='#F65314'>5:</span>"
+set $ws6  "<span color='#f7786b'>6:</span>"
+set $ws7  "<span color='#FBBC05'>7:</span>"
+set $ws8  "<span color='#00ffff'>8:</span>"
+set $ws9   "<span color='#33bdf5'>9:</span>"
+set $ws10  "<span color='#ff66ff'>10:</span>"
 
 #assign [class="(?i)urxvt"] → $ws1
-assign [class="(?i)google-chrome-unstable"] → $ws2
+assign [class="(?i)chromium"] → $ws2
 assign [class="(?i)mpv"] → $ws3
 assign [class="(?i)mupdf"] → $ws4
 assign [class="(?i)wireshark-gtk"] → $ws8
@@ -168,7 +187,7 @@ assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
     bindsym $mod+Shift+8 move container to workspace $ws8
     bindsym $mod+Shift+9 move container to workspace $ws9
     bindsym $mod+Shift+0 move container to workspace $ws10
-    # Note: workspaces can have any name you want, not just numbers.
+    # Note: w --no-startup-id orkspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
 # Layout stuff:
@@ -176,13 +195,13 @@ assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+h splith
+    bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+#    bindsym $mod+w layout tabbed
+ #   bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -194,7 +213,7 @@ assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
     bindsym $mod+space focus mode_toggle
 
     # move focus to the parent container
-    bindsym $mod+a focus parent
+   # bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -255,7 +274,6 @@ bar {
 	mode dock
     colors {
         statusline #62AEEE
-		#f9f9f9
         background #3f3f3f
 		separator #ffff00
 
@@ -264,9 +282,6 @@ bar {
 		active_workspace	#777F8B	#777F8B	#ecedee
     	  urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
     }
-
-
-
 ###########:::::::::::::::: MARCO DE VENTANA ::::::::::::::::::#
 #################################################################
 # class           		 border  backgr  text   indicator child_border 
