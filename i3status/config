@@ -13,6 +13,16 @@ general {
 		markup="pango"
 }
 
+#pink   		  #ff80bf		#fa4c7e
+#yellow  		  #ffff66		#fdd243
+#green   		  #aaff80		#78da59
+#Dark blue 		  #1a8cff		#166cd6
+#light blue 	  #99ccff		#33bdf5
+#Grey Shadow      #b3b3b3		#8d8e90
+#Orange 		  #ffa64d 		#fba137
+
+
+
 order += "wireless _first_"
 order += "ethernet enp4s0"
 order += "battery 0"
@@ -28,12 +38,12 @@ wireless _first_ {
 
 ethernet enp4s0 {
   # if you use %speed, i3status requires root privileges
-  #format_up =" <span color='#a1b56c'> enp4s0: [  ] %ip</span>"
-  format_up   = "enp4s0: [  ] %ip"
+  format_up =" <span color='#33bdf5'> enp4s0: [  ] %ip</span>"
+  #format_up   = "enp4s0: [  ] %ip"
   format_down = ""
 }
 battery 0 {
-		format = "<span color='#FF9966'> %status: %percentage </span>"   // %remaining %emptytime"
+		format = "<span color='#fa4c7e'> %status: %percentage </span>"   // %remaining %emptytime"
 		format_down = "No battery"
 		
 		status_chr = "<span color='#00e64d'>[  ]  </span> "
@@ -49,7 +59,7 @@ battery 0 {
 
 
 tztime local {
-	    format = "<span color='#FF9966'>%time</span>"
+	    format = "<span color='#fba137'>%time</span>"
         format_time = "  %I:%M %p |  %a [%d]-%b [%m]"
 }
 
