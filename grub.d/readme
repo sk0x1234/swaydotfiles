@@ -1,2 +1,0 @@
-run os-probber  #if-grub doesn't detect windows partition, then run 
->> # grub-mkconfig -o /boot/grub/grub.cfg
