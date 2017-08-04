@@ -8,4 +8,4 @@ sway dotfiles
 
  `Urxvt`
 
-![Current](http://imgur.com/a/824RT)
+![Current](http://i.imgur.com/1HEWdHL.png)
