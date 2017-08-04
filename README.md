@@ -6,6 +6,6 @@ sway dotfiles
 
 # Screenshot
 
- `Urxvt`
+ `Urxvt` `sway` `i3status` 
 
 ![Current](http://i.imgur.com/1HEWdHL.png)
