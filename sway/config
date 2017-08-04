@@ -88,14 +88,14 @@
 	set $right l
 
 
-    # reload the configuration file
+# reload the configuration file
     bindsym $mod+Shift+r reload
 
-    # exit sway (logs you out of your wayland session)
+ # exit sway (logs you out of your wayland session)
     bindsym $mod+Shift+e exit
 
-	#sway lock
-    bindsym $mod+a exec  swaylock -i /home/windy/Pictures/wallpapers/wallhaven-295990.png
+#sway lock
+    bindsym Alt+l exec  swaylock -i /home/windy/Pictures/wallpapers/wallhaven-295990.png
 # Moving around:
 #
     # Move your focus around
