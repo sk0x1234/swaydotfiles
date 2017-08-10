@@ -8,4 +8,3 @@ function wifi
 			echo "invalig argv"
 		end
 end
-
