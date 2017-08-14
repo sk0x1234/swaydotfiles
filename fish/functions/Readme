@@ -1,5 +1,5 @@
-asd a
-rsync -qaHAXS SOURCE_DIR DESTINATION_DIR
+#For backup
+rsync -qaHAXS <SOURCE_DIR> <DESTINATION_DIR>
 
 
 sudo pacman -Rns gvfs gvfs-mtp
