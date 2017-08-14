@@ -1,8 +1,0 @@
-
-open_with mupdf
-find 
-shell mkdir Alien_Covanent
-rename Alien-Covenant.2017.HDRip.1080p.mkv
-shell mv Alien-Covenant\ en.srt Alien-Covenant.2017.HDRip.1080p.srt
-default_linemode 
-delete 
