@@ -1,5 +1,4 @@
 function mountD
-
 	switch $argv
 		case -l or l 
 			sudo mount /dev/sda5 /mnt/driveD/ -o fmask=111
@@ -8,6 +7,4 @@ function mountD
 		case '*'
 			echo "Invalid argv"
 	end
-
-
 end
