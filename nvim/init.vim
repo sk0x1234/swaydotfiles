@@ -3,6 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 "set rtp+=~/.config/nvim/bundle/Vundle.vim
+"set rtp+=~/.config/nvim/plugin/beautifier.vim
 "call vundle#begin()
 " core plugins
 "Plugin 'VundleVim/Vundle.vim'
@@ -28,7 +29,6 @@ set showmatch
 set laststatus=2
 set shell=/bin/bash
 colorscheme  base16-eighties
-"cobalt 
 "molokai "badwolf 
 "source ~/.vim/.myvimrc
 
@@ -46,7 +46,8 @@ set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
-set nowrap "Wrap lines
+"set nowrap "Wrap lines
+set wrap "Wrap lines
 nnoremap Q <nop>
 
 
@@ -74,3 +75,4 @@ nnoremap Q <nop>
  " saving readonly file edited in nvim
  "
  cmap w!! w !sudo tee %
+ map <c-f> :call JsBeautify()<cr>
