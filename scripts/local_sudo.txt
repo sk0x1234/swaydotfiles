@@ -1,0 +1,5 @@
+%wheel ALL=(ALL) ALL
+
+windy cloud=NOPASSWD: /usr/bin/bright_Up
+windy cloud=NOPASSWD: /usr/bin/bright_Down
+
