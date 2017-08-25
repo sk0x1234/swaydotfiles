@@ -1,1 +1,3 @@
-asda 
+[blackarch]                                                                                                                                                           
+Include = /etc/pacman.d/blackarch                                                                                                                                     
+SigLevel = TrustedOnly
