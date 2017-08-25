@@ -1,0 +1,16 @@
+xorg-bdftopcf
+xorg-font-util
+xorg-font-utils
+xorg-fonts-alias
+xorg-fonts-encodings
+xorg-fonts-misc
+xorg-mkfontdir
+xorg-mkfontscale
+xorg-server-common
+xorg-server-xwayland
+xorg-setxkbmap
+xorg-xhost
+xorg-xkbcomp
+xorg-xprop
+xorg-xrdb
+xorg-xset
