@@ -1,0 +1,84 @@
+#Server = http://ftp.iitm.ac.in/archlinux/$repo/os/$arch
+Server = http://mirror.f4st.host/archlinux/$repo/os/$arch
+Server = http://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
+Server = http://mirrors.n-ix.net/archlinux/$repo/os/$arch
+Server = https://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
+Server = https://mirror.hactar.xyz/$repo/os/$arch
+
+
+
+
+##
+## Arch Linux repository mirrorlist
+## Generated on 2017-08-18
+##
+
+## Germany
+#Server = http://mirror.23media.de/archlinux/$repo/os/$arch
+#Server = https://arch.32g.eu/$repo/os/$arch
+#Server = http://artfiles.org/archlinux.org/$repo/os/$arch
+#Server = https://fabric-mirror.vps.hosteurope.de/archlinux/$repo/os/$arch
+#Server = https://mirror.bethselamin.de/$repo/os/$arch
+#Server = http://mirror.euserv.net/linux/archlinux/$repo/os/$arch
+#Server = http://mirror.f4st.host/archlinux/$repo/os/$arch
+#Server = https://mirror.f4st.host/archlinux/$repo/os/$arch
+#Server = http://ftp.fau.de/archlinux/$repo/os/$arch
+#Server = https://ftp.fau.de/archlinux/$repo/os/$arch
+#Server = http://mirror.fluxent.de/archlinux/$repo/os/$arch
+#Server = https://mirror.fluxent.de/archlinux/$repo/os/$arch
+#Server = http://mirror.gnomus.de/$repo/os/$arch
+#Server = http://www.gutscheindrache.com/mirror/archlinux/$repo/os/$arch
+#Server = http://ftp.gwdg.de/pub/linux/archlinux/$repo/os/$arch
+#Server = http://mirror.hactar.xyz/$repo/os/$arch
+#Server = https://mirror.hactar.xyz/$repo/os/$arch
+#Server = http://archlinux.honkgong.info/$repo/os/$arch
+#Server = http://ftp.hosteurope.de/mirror/ftp.archlinux.org/$repo/os/$arch
+#Server = http://ftp-stud.hs-esslingen.de/pub/Mirrors/archlinux/$repo/os/$arch
+#Server = http://archlinux.mirror.iphh.net/$repo/os/$arch
+#Server = http://repo.itmettke.de/archlinux/$repo/os/$arch
+#Server = https://repo.itmettke.de/archlinux/$repo/os/$arch
+#Server = https://mirror.jankoppe.de/archlinux/$repo/os/$arch
+#Server = http://arch.jensgutermuth.de/$repo/os/$arch
+#Server = https://arch.jensgutermuth.de/$repo/os/$arch
+#Server = http://mirror.js-webcoding.de/pub/archlinux/$repo/os/$arch
+#Server = https://mirror.js-webcoding.de/pub/archlinux/$repo/os/$arch
+#Server = http://k42.ch/mirror/archlinux/$repo/os/$arch
+#Server = https://k42.ch/mirror/archlinux/$repo/os/$arch
+#Server = http://mirror.de.leaseweb.net/archlinux/$repo/os/$arch
+#Server = https://mirror.de.leaseweb.net/archlinux/$repo/os/$arch
+#Server = http://mirror.metalgamer.eu/archlinux/$repo/os/$arch
+#Server = https://mirror.metalgamer.eu/archlinux/$repo/os/$arch
+#Server = http://mirror.michael-eckert.net/archlinux/$repo/os/$arch
+#Server = https://mirror.michael-eckert.net/archlinux/$repo/os/$arch
+#Server = http://mirrors.n-ix.net/archlinux/$repo/os/$arch
+#Server = https://mirrors.n-ix.net/archlinux/$repo/os/$arch
+#Server = http://mirror.netcologne.de/archlinux/$repo/os/$arch
+#Server = https://mirror.netcologne.de/archlinux/$repo/os/$arch
+#Server = http://mirrors.niyawe.de/archlinux/$repo/os/$arch
+#Server = https://mirrors.niyawe.de/archlinux/$repo/os/$arch
+#Server = http://archlinux.nullpointer.io/$repo/os/$arch
+#Server = https://archlinux.nullpointer.io/$repo/os/$arch
+#Server = http://mirror.pseudoform.org/$repo/os/$arch
+#Server = https://mirror.pseudoform.org/$repo/os/$arch
+#Server = https://www.ratenzahlung.de/mirror/archlinux/$repo/os/$arch
+#Server = http://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
+#Server = https://ftp.halifax.rwth-aachen.de/archlinux/$repo/os/$arch
+#Server = http://linux.rz.rub.de/archlinux/$repo/os/$arch
+#Server = http://mirror.selfnet.de/archlinux/$repo/os/$arch
+#Server = http://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/$repo/os/$arch
+#Server = https://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/$repo/os/$arch
+#Server = http://archlinux.thaller.ws/$repo/os/$arch
+#Server = https://archlinux.thaller.ws/$repo/os/$arch
+#Server = http://archlinux.thelinuxnetworx.rocks/$repo/os/$arch
+#Server = https://archlinux.thelinuxnetworx.rocks/$repo/os/$arch
+#Server = http://archmirror.tomforb.es/$repo/os/$arch
+#Server = https://archmirror.tomforb.es/$repo/os/$arch
+#Server = http://ftp.tu-chemnitz.de/pub/linux/archlinux/$repo/os/$arch
+#Server = http://mirror.ubrco.de/archlinux/$repo/os/$arch
+#Server = https://mirror.ubrco.de/archlinux/$repo/os/$arch
+#Server = http://ftp.uni-bayreuth.de/linux/archlinux/$repo/os/$arch
+#Server = http://ftp.uni-hannover.de/archlinux/$repo/os/$arch
+#Server = http://ftp.uni-kl.de/pub/linux/archlinux/$repo/os/$arch
+#Server = http://mirror.united-gameserver.de/archlinux/$repo/os/$arch
+#Server = http://mirror.vfn-nrw.de/archlinux/$repo/os/$arch
+#Server = https://mirror.vfn-nrw.de/archlinux/$repo/os/$arch
