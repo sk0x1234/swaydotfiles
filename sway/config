@@ -19,7 +19,7 @@
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-	output * bg /home/windy/Pictures/wallpapers/wallhaven-295990.png fill
+	output * bg /home/windy/Pictures/Wallpapers/pexels-photo-93685.jpg fill
 
 
 
@@ -147,7 +147,7 @@ assign [class="(?i)chromium"] → $ws2
 assign [class="(?i)mpv"] → $ws3
 assign [class="(?i)mupdf"] → $ws4
 assign [class="(?i)wireshark-gtk"] → $ws8
-assign [class="(?i)Tor Browser"] → $ws9
+assign [class="^Firefox$" instance="^Navigator$"] → $ws9
 assign [class="^Tor Browser$" instance="^Navigator$"] → $ws9
 
     # switch to workspace
