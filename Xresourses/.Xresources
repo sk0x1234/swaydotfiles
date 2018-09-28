@@ -1,6 +1,6 @@
 ! URXVT GENERAL CONFIG
 !------------------------------------------------
-URxvt.geometry: 90x16
+URxvt.geometry: 101x20
 URxvt.imLocale: en_US.UTF-8
 
 ! URXVT FONTS
@@ -11,8 +11,9 @@ URxvt.italicfont:xft:Monaco:italic:size=9
 URxvt.bolditalicFont:xft:Monaco:bold:italic:size=9
 URxvt*letterSpace: -1
 URxvt*allow_bold: true
-URxvt.depth:                32
-
+URxvt.depth:       32
+*internalBorder:        8 	
+*externalBorder:        8
 
 ! URXVT FONT SETTINGS
 !------------------------------------------------
@@ -22,14 +23,9 @@ Xft.hinting: true
 Xft.hintstyle: hintsfull
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
-!URxvt.shading:       20
-
-
 
 URxvt*perl-ext:
 URxvt*perl-ext-common:
-
-
 
 !------------------------------------------------
 URxvt.iso14755: False
@@ -45,40 +41,19 @@ URxvt.cursorUnderline: true
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
 
+! vim: set filetype=xdefaults :
+*foreground: #D7D0C7
+*background: #151515
 
-! Base16 Isotope
-
-#define base00 #000000
-#define base01 #404040
-#define base02 #606060
-#define base03 #808080
-#define base04 #c0c0c0
-#define base05 #d0d0d0
-#define base06 #e0e0e0
-#define base07 #ffffff
-#define base08 #ff0000
-#define base09 #ff9900
-#define base0A #ff0099
-#define base0B #33ff00
-#define base0C #00ffff
-#define base0D #0066ff
-#define base0E #cc00ff
-#define base0F #3300ff!
-
-! special
-*.foreground: #ffffff
-!*.background:  #202020
-*.background:  #585858
-*.cursorColor:  #ffffff
 
 ! black
 *.color0:       #000000
 *.color8:       #4d4d4d
 
-! red
+!! red
 *.color1:       #cc2c2b
-*.color9:       #e21613
-
+.color9:       #e21613
+!
 ! green
 *.color2:       #5bcb4b
 *.color10:      #00fd56
@@ -103,5 +78,9 @@ URxvt.keysym.Shift-Down: command:\033]721;1\007
 *.color7:       #e4e4e4
 *.color15:      #d3d3d3
 
+URxvt*borderColor:        #151515
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #ff8939
+URxvt*cursorColor2:       #151515
+!
 cursor.theme:Capitaine Cursors
-
