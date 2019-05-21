@@ -1,1 +1,2 @@
-asdasd
+#username ALL=(ALL) ALL
+#username ALL=(ALL) NOPASSWD: /usr/bin/brightness.sh
