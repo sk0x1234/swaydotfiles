@@ -18,7 +18,7 @@ font pango:Monaco, 9
 floating_modifier $mod
 
 #:::start a terminal
-bindsym $mod+Return exec urxvt  # Urxvt
+bindsym $mod+Return exec urxvt -e /usr/bin/fish # Urxvt
 bindsym $mod+x exec xterm -e /bin/bash  # xterm
 
 # :::kill focused window
@@ -29,10 +29,10 @@ bindsym $mod+q kill
 bindsym $mod+d exec dmenu_run -i -fn 'monaco-9:bold:pixelsize=12' -nb '#3F3F3F' -nf '#15B3E8' -sf '#000000' -sb '#F2FA00'
 
 #:::: change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
 # :::alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -47,8 +47,8 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 
-bindsym $mod+Alt+Left workspace prev
-bindsym $mod+Alt+Right workspace next
+#bindsym $mod+Alt+Left workspace prev
+#bindsym $mod+Alt+Right workspace next
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -61,6 +61,12 @@ bindsym $mod+f fullscreen toggle
 
 #:::::::pop-ups for fullscreen
 popup_during_fullscreen smart
+
+
+bindsym $mod+l exec i3lock -c 000000
+
+bindsym $mod+Tab workspace prev_on_output
+bindsym $mod+Shift+Tab workspace next_on_output
 
 #sticky
 bindsym $mod+Shift+s sticky toggle
@@ -88,11 +94,11 @@ workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
 
 #brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up.sh
-bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down.sh
+#bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up.sh
+#bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down.sh
 
 
-bindsym XF86Display exec --no-startup-id xset dpms force off
+#bindsym XF86Display exec --no-startup-id xset dpms force off
 # focus the parent container
 bindsym $mod+a focus parent
 ######grouping workspaces+name####
@@ -208,10 +214,13 @@ smart_borders on
 
 
 #:::::::::control de volume:::::::::::::
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+#bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 2+ unmute"
+#bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2- unmute"
+#bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 bar {
 	status_command  i3status
