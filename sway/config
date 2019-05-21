@@ -19,7 +19,7 @@
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-	output * bg /home/windy/Pictures/Wallpapers/pexels-photo-93685.jpg fill
+	output * bg /home/windy/Pictures/Wallpapers/wallhaven-770687.jpg fill
 
 
 
@@ -66,7 +66,8 @@
 # Basics:
 #
     # start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec $term -e /usr/bin/fish
+    bindsym $mod+x exec xterm -e /bin/bash
 
     # kill focused window
     bindsym $mod+q kill
@@ -95,14 +96,14 @@
     bindsym $mod+Shift+e exit
 
 #sway lock
-    bindsym Alt+l exec  swaylock -i /home/windy/Pictures/wallpapers/wallhaven-295990.png
+    bindsym $mod+l exec  swaylock -c "#000000"
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+##    bindsym $mod+$left focus left
+ #   bindsym $mod+$down focus down
+  #  bindsym $mod+$up focus up
+   # bindsym $mod+$right focus right
     # or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
@@ -122,25 +123,29 @@
 #
 
 # enable floating mode for all Specified windows
-#for_window [class="(?i)urxvt"] floating enable
+for_window [class="(?i)urxvt"] floating enable
 for_window [class="(?i)mpv"] floating enable
 
 #quick_back_and_forth_work_space
 workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
 
+bindsym $mod+Tab workspace prev_on_output
+
+bindsym $mod+Shift+Tab workspace next_on_output
+
 ######grouping workspaces+name####
 #set $ws1 "<span color='#78da59'>1:</span>"
 set $ws1 "1:"
-set $ws2 "<span color='#ffff33'>2:</span>"
-set $ws3 "<span color='#cc00ff'>3:</span>"    
-set $ws4  "<span color='#00A1F1'>4:</span>"
-set $ws5  "<span color='#F65314'>5:</span>"
-set $ws6  "<span color='#f7786b'>6:</span>"
-set $ws7  "<span color='#FBBC05'>7:</span>"
-set $ws8  "<span color='#00ffff'>8:</span>"
-set $ws9   "<span color='#33bdf5'>9:</span>"
-set $ws10  "<span color='#ff66ff'>10:</span>"
+set $ws2 "2:"
+set $ws3 "3:"    
+set $ws4  "4:"
+set $ws5  "5:"
+set $ws6  "6:"
+set $ws7  "7:"
+set $ws8  "8:"
+set $ws9  "9:"
+set $ws10 "10:"
 
 #assign [class="(?i)urxvt"] → $ws1
 assign [class="(?i)chromium"] → $ws2
@@ -236,15 +241,19 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#:::::::::control de volume:::::::::::::
+#:::::::::ALSA:::::::::::::
 
-bindsym XF86AudioMute exec --no-startup-id  amixer set Master toggle
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+#bindsym XF86AudioMute exec --no-startup-id  amixer set Master toggle
+#bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+#bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+#------------pulseAudio----------------------
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 #brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up
-bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo bright_Up.sh
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo bright_Down.sh
 
 #
 # Status Bar:
@@ -265,10 +274,10 @@ bar {
         background #585858
 		#separator #ffff00
 		separator #fff32e
-							#border 	#bg		#txt
-        focused_workspace	#585858	#585858	#66FF66
-        inactive_workspace	#585858	#585858	 #78da59
-		active_workspace	#777F8B	#777F8B	#ecedee
+				#border 	#bg		#txt
+        focused_workspace	#585858	#585858	#ffba08
+        inactive_workspace	#585858	#585858	 #cde4e6
+	active_workspace	#777F8B	#777F8B	#cde4e6
     	 urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
 
 
