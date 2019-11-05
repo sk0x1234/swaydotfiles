@@ -1,0 +1,68 @@
+[
+   {
+     "id": 3,
+     "name": "eDP-1",
+     "rect": {
+       "x": 0,
+       "y": 0,
+       "width": 1920,
+       "height": 1080
+     },
+     "focus": [
+       30,
+       31
+     ],
+     "border": "none",
+     "current_border_width": 0,
+     "layout": "output",
+     "orientation": "none",
+     "percent": 1.0,
+     "window_rect": {
+       "x": 0,
+       "y": 0,
+       "width": 0,
+       "height": 0
+     },
+     "deco_rect": {
+       "x": 0,
+       "y": 0,
+       "width": 0,
+       "height": 0
+     },
+     "geometry": {
+       "x": 0,
+       "y": 0,
+       "width": 0,
+       "height": 0
+     },
+     "window": null,
+     "urgent": false,
+     "floating_nodes": [
+     ],
+     "sticky": false,
+     "type": "output",
+     "active": true,
+     "dpms": true,
+     "primary": false,
+     "make": "Sharp Corporation",
+     "model": "0x14BA",
+     "serial": "0x00000000",
+     "scale": 1.0,
+     "transform": "normal",
+     "current_workspace": "<span color='#78da59'>1:<\/span>",
+     "modes": [
+       {
+         "width": 1920,
+         "height": 1080,
+         "refresh": 59999
+       }
+     ],
+     "current_mode": {
+       "width": 1920,
+       "height": 1080,
+       "refresh": 59999
+     },
+     "focused": true,
+     "subpixel_hinting": "unknown"
+   }
+ ]
