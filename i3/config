@@ -225,7 +225,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 bar {
 	status_command  i3status
     position top
-	font pango:  Monaco,Bold 11px
+	font pango:  FontAwesome,Monaco,Bold 11px
 	separator_symbol "   "
 	mode dock
    
