@@ -1,5 +1,5 @@
 # swaydotfiles
-sway dotfiles
+sway dotfiles fontawesome(in dotfiles move to /usr/share/fonts update fc-cache -vr)
 
 
 
