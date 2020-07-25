@@ -1,5 +1,6 @@
 #--[i3 config file]-- #
 exec_always --no-startup-id  feh -g 1366x768  --recursive --randomize --bg-fill  /home/windy/Pictures/
+exec_always --no-startup-id   libinput-gestures-setup start
 #::::mod touch:::::::
 set $mod Mod4
 #::::default Programs::::::::
