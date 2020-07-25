@@ -1,1 +1,2 @@
+#burpsuiteLookAndFEEL JAVA Environment settings
 _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=setting -Dawt.useSystemAAFontSettings=gasp'
