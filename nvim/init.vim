@@ -24,6 +24,10 @@ set history=700
 set ignorecase
 set hlsearch
 set showmatch
+set nobackup
+set noswapfile
+set noundofile
+
 
 "other settings
 set laststatus=2
