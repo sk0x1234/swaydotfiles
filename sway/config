@@ -19,7 +19,7 @@
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-	output * bg /home/windy/Pictures/Wallpapers/wallhaven-770687.jpg fill
+	output * bg /home/windy/Pictures/Wallpapers/wallhaven-2eozkm.jpg fill
 
 
 
@@ -36,11 +36,11 @@
 
 #       natural_scroll enabled
 #       middle_emulation enabled
-	input "2:8:AlpsPS/2_ALPS_GlidePoint" {  
+	input "1739:31251:SYNA2393:00_06CB:7A13_Touchpad" {  
 		   accel_profile adaptive
 		   dwt enabled
 		   tap enabled
-		   scroll_method  edge
+		   natural_scroll enabled
 	   }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -48,9 +48,7 @@
 
  #:::::::::disable_window_borders::::::::                                                                  
 	 for_window [class="^.*"] border pixel 0                                                                   
-	 new_window pixel 1                                                                                        
-	 new_float  normal   
-
+	 default_border none
 
 #:::::i3_ gaps::::::::::::::                                                                              
 	set $default_gaps_inner 10                                                                                
@@ -271,30 +269,18 @@ bar {
         statusline   #78da59
         #statusline #62AEEE 
         #background #585858
-        background #585858
-		#separator #ffff00
-		separator #fff32e
+        background #332f2e
+	#separator #ffff00
+	separator #fff32e
 				#border 	#bg		#txt
-        focused_workspace	#585858	#585858	#ffba08
-        inactive_workspace	#585858	#585858	 #cde4e6
+        focused_workspace	#332f2e	#332f2e	#ffba08
+        #inactive_workspace	#332f2e	#585858	 #cde4e6
+        inactive_workspace	#332f2e	#332f2e	 #cde4e6
 	active_workspace	#777F8B	#777F8B	#cde4e6
-    	 urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
+    	urgent_workspace	#DEDFE3	#DEDFE3	#767E8A   
 
 
 
-		# focused_workspace	#585858	#585858	#66FF66 
-        #inactive_workspace	#585858	#585858	 #8C8C8C 
-		#active_workspace	#777F8B	#777F8B	#ecedee
-    	#  urgent_workspace	#DEDFE3	#DEDFE3	#767E8A       
     }
-###########:::::::::::::::: MARCO DE VENTANA ::::::::::::::::::#
-#################################################################
-# class           		 border  backgr  text   indicator child_border 
-#client.focused		 	#607d8b #607d8b #DFDFDF  #dddddd   #607d8b
-#client.focused_inactive 	#263238 #263238 #9a9b9c  #111111   #263238
-#client.unfocused 		#455a64 #455a64 #a1a1a1  #bfbfbf   #455a64	
-#client.urgent   		#4a4b4c #4a4b4c #fdfdfd  #fbfbfb   #4a4c4b
-#client.placeholder     		#000000 #0c0c0c #ffffff  #000000   #0c0c0c
-#client.background       	#111111
 
 
