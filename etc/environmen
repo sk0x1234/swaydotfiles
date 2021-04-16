@@ -6,6 +6,6 @@
  _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dsun.java2d.uiScale=2 -Dsun.java2d.uiScale=300% -Dglass.gtk.uiScale=200% -Dglass.gtk.uiScale=146dpi -Dglass.gtk.uiScale=2.0'
  export  _JAVA_AWT_WM_NONREPARENTING=1
 #JAVA_FONTS=/usr/share/fonts/TTF
-
+export GDK_BACKEND=wayland
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
