@@ -3,6 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+exec_always --no-startup-id   libinput-gestures-setup start
 ### Variables
 	exec --no-startup-id xrdb ~/.Xresources
 
@@ -128,9 +129,9 @@ for_window [class="(?i)mpv"] floating enable
 workspace_auto_back_and_forth yes
 bindsym $mod+z workspace back_and_forth
 
-bindsym $mod+Tab workspace prev_on_output
+bindsym $mod+Tab workspace next_on_output
 
-bindsym $mod+Shift+Tab workspace next_on_output
+bindsym $mod+Shift+Tab workspace prev_on_output
 
 ######grouping workspaces+name####
 #set $ws1 "<span color='#78da59'>1:</span>"
