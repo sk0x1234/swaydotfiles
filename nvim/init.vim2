@@ -314,3 +314,29 @@ let g:keysound_enable = 1
 let g:keysound_volume = 1000
 let g:keysound_py_version = 3
 let g:keysound_theme = 'typewriter'
+
+
+
+
+
+
+
+
+"NewlyAddedDrakula:
+
+function! MyHighlights() abort
+    highlight Normal     cterm=NONE ctermbg=black              gui=NONE guibg=#00005f
+endfunction
+
+augroup MyColors
+    autocmd!
+    autocmd ColorScheme * call MyHighlights()
+augroup END
+
+packadd! dracula
+syntax enable
+colorscheme dracula
+
+
+
+
